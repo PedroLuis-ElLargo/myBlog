@@ -52,7 +52,7 @@ form.addEventListener('submit', function(event) {
   });
   
 const limpiarCampos = () =>{
-    document.querySelector("#nombre").value = "";
-    document.querySelector("#correo").value = "";
-    document.querySelector("#mensaje").value = "";
+    document.querySelector( '#name' ).value = "";
+    document.querySelector( '#email' ).value = "";
+    document.querySelector( '#message' ).value = "";
 }
