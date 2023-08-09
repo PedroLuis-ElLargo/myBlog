@@ -369,8 +369,6 @@ nav .fa-solid.fa-xmark {
         top: 0;
         right: 0;
         width: 100%;
-        height: 15vh;
-        padding: 10px;
         visibility: hidden;
         color: #fff;
     }
