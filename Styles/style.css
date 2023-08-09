@@ -364,6 +364,7 @@ nav .fa-solid.fa-xmark {
     nav ul {
         display: flex;
         justify-content: center;
+    
         background: #61035f;
         position: fixed;
         top: 0;
@@ -371,10 +372,6 @@ nav .fa-solid.fa-xmark {
         width: 100%;
         visibility: hidden;
         color: #fff;
-    }
-
-    nav ul li {
-        margin: 25px;
     }
 
     nav ul li a {
