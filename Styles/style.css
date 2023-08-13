@@ -390,6 +390,10 @@ nav .fa-solid.fa-xmark {
         border-radius: 25px;
     }
 
+    .about-col-2{
+        padding: 0 15px;
+    }
+
     .row{
         display: flex;
         flex-direction : column ;
