@@ -81,42 +81,56 @@ nav ul li a:hover::after {
 
 /* ----------ABOUT---------- */
 #about {
-    padding: 80px 0px;
+    padding: 40px 10px;
     color: #171616;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .row {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.columnaRow {
+    flex: 1;
+    margin: 0 10px;
 }
 
 .about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
+    flex-basis: 40%;
 }
 
 .about-col-2 {
     flex-basis: 60%;
 }
 
+.about-col-1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
 .sub-title {
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 600;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
 .tab-links {
-    margin-right: 50px;
+    margin: 0 20px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -138,9 +152,14 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
+.tab-contents ul {
+    padding-left: 0;
+}
+
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    text-align: left;
 }
 
 .tab-contents ul li span {
@@ -150,10 +169,12 @@ nav ul li a:hover::after {
 
 .tab-contents {
     display: none;
+    text-align: left;
 }
 
 .tab-contents.active-tab {
     display: block;
+    margin-top: 20px;
 }
 
 /* ----------PORTFOLIO---------- */
@@ -395,14 +416,9 @@ nav .fa-solid.fa-xmark {
         font-size: 25px;
     }
 
-    #about {
-        padding: 40px;
-
-    }
-
     #about .container {
         max-width: 100%;
-
+        padding: 10px 5px;
     }
 
     .about-col-1 {
@@ -410,7 +426,7 @@ nav .fa-solid.fa-xmark {
     }
 
     .about-col-1 img {
-        width: 80%;
+        width: 100%;
         border-radius: 25px;
     }
 
@@ -422,5 +438,4 @@ nav .fa-solid.fa-xmark {
         align-content: center;
         align-items: center;
     }
-
 }
