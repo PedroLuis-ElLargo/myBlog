@@ -239,7 +239,7 @@ nav ul li a:hover::after {
 
 .btn:hover {
     background: #7f057f;
-    color:#fff ;
+    color: #fff;
 }
 
 /* ----------CONTACT---------- */
@@ -312,7 +312,7 @@ form textarea {
     font-weight: 300;
     margin-top: 20px;
     background-color: #f0f0f0;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: 10px 10px 20px #c7c7c7, -10px -10px 20px #ffffff;
     width: 100%;
     text-align: center;
@@ -324,7 +324,7 @@ form textarea {
 .copyright i {
     color: #61035f;
     transition: color 0.5s;
-    
+
 }
 
 .copyright i:hover {
@@ -351,8 +351,8 @@ nav .fa-solid.fa-xmark {
         font-size: 30px;
     }
 
-   nav .fa-solid.fa-bars,
-   nav .fa-solid.fa-xmark {
+    nav .fa-solid.fa-bars,
+    nav .fa-solid.fa-xmark {
         display: inline-block;
         font-size: 35px;
         margin-left: 10px;
@@ -373,8 +373,8 @@ nav .fa-solid.fa-xmark {
         width: 35%;
         visibility: hidden;
         color: #fff;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
@@ -390,13 +390,13 @@ nav .fa-solid.fa-xmark {
         border-radius: 25px;
     }
 
-    .about-col-2{
+    .about-col-2 {
         padding: 0 15px;
     }
 
-    .row{
+    .row {
         display: flex;
-        flex-direction : column ;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
@@ -404,4 +404,3 @@ nav .fa-solid.fa-xmark {
     }
 
 }
- 
