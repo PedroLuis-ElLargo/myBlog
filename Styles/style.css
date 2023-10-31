@@ -370,7 +370,8 @@ nav .fa-solid.fa-xmark {
         position: fixed;
         top: 0;
         right: 0;
-        width: 35%;
+        width: 100%;
+        height: 100%;
         visibility: hidden;
         color: #fff;
         flex-direction: column;
@@ -383,6 +384,12 @@ nav .fa-solid.fa-xmark {
 
     nav ul li a {
         color: #fff;
+        font-size: 25px;
+    }
+
+    #about {
+        padding: 40px 10px;
+
     }
 
     .about-col-1 img {
