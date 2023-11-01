@@ -123,6 +123,8 @@ nav ul li a:hover::after {
 }
 
 .tab-titles {
+    border: 2px solid #c3c3c3d4;
+    background-color: #fbfbfb;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -130,9 +132,9 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-    margin: 0 20px;
+    margin: 5px 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
 }
@@ -316,15 +318,15 @@ nav ul li a:hover::after {
 form input,
 form textarea {
     width: 100%;
-    border: 0;
+    border: 1px solid #7f057f;
     outline: none;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 15px;
     margin: 15px 0;
     color: #000000;
     font-size: 18px;
     border-radius: 6px;
-    box-shadow: inset 5px 5px 10px #c7c7c7, inset -5px -5px 10px #ffffff;
+    box-shadow: 2px 2px 4px #c7c7c7, -2px -2px 4px #ffffff;
 }
 
 .copyright {
@@ -437,5 +439,18 @@ nav .fa-solid.fa-xmark {
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
+    }
+
+    .columnaRow .tab-titles {
+        margin: 20px 0;
+        flex-wrap: nowrap;
+
+        border: 2px outset #fbfbfb;
+        background-color: #fbfbfb;
+    }
+
+    .tab-titles .tab-links {
+        font-weight: bold;
+        margin: 5px 10px;
     }
 }
