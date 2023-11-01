@@ -123,7 +123,7 @@ nav ul li a:hover::after {
 }
 
 .tab-titles {
-    border: 2px solid #c3c3c3d4;
+    border: 2px solid #e0e0e0d4;
     background-color: #fbfbfb;
     display: flex;
     flex-wrap: wrap;
