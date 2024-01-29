@@ -396,7 +396,6 @@ nav .fa-solid.fa-xmark {
 
     nav ul {
         display: none;
-        /* Cambiado de visibility a display */
         position: fixed;
         top: 0;
         right: 0;
@@ -405,6 +404,8 @@ nav .fa-solid.fa-xmark {
         color: #fff;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background-color: #61035f;
     }
 
     nav ul li {
