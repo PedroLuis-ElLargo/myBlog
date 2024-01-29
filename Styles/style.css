@@ -396,8 +396,7 @@ nav .fa-solid.fa-xmark {
 
     nav ul {
         display: none;
-        justify-content: center;
-        background: #61035f;
+        /* Cambiado de visibility a display */
         position: fixed;
         top: 0;
         right: 0;
