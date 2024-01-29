@@ -16,24 +16,30 @@ function openTab(tabName) {
 // JavaScript para manejar el menú de navegación móvil
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.fa-bars').addEventListener('click', function () {
-        const listaMenu = document.querySelector('.listaMenu');
-        listaMenu.style.visibility = 'visible';
+        const listaMenu = document.querySelector('nav ul'); // Cambiado de '.listaMenu' a 'nav ul'
+        listaMenu.style.display = 'flex'; // Cambiado de 'visibility' a 'display'
     });
 
     document.querySelector('.fa-xmark').addEventListener('click', function () {
-        const listaMenu = document.querySelector('.listaMenu');
-        listaMenu.style.visibility = 'hidden';
+        const listaMenu = document.querySelector('nav ul'); // Cambiado de '.listaMenu' a 'nav ul'
+        listaMenu.style.display = 'none'; // Cambiado de 'visibility' a 'display'
     });
 
     // Agregar evento click a cada enlace dentro del menú
-    const enlacesMenu = document.querySelectorAll('.listaMenu a');
+    const enlacesMenu = document.querySelectorAll('nav ul a'); // Cambiado de '.listaMenu a' a 'nav ul a'
     enlacesMenu.forEach(function (enlace) {
         enlace.addEventListener('click', function () {
-            const listaMenu = document.querySelector('.listaMenu');
-            listaMenu.style.visibility = 'hidden';
+            const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth <= 700) {
+                const listaMenu = document.querySelector('nav ul'); // Cambiado de '.listaMenu' a 'nav ul'
+                listaMenu.style.display = 'none'; // Cambiado de 'visibility' a 'display'
+            }
         });
     });
 });
+
+
 
 //funcion para que el usuario envie el correo
 
