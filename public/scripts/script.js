@@ -57,7 +57,7 @@ document
 
     try {
       let response = await fetch(
-        "https://my-blog-pi-sable.vercel.app/api/send-email",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/send-email`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
