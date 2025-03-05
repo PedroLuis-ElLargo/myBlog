@@ -57,7 +57,7 @@ document
 
     try {
       let response = await fetch(
-        "https://tu-dominio.vercel.app/api/send-email",
+        "https://my-blog-pi-sable.vercel.app//api/send-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
