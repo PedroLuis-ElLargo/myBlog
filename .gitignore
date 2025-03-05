@@ -1,0 +1,25 @@
+# Ignorar node_modules (archivos de dependencias)
+node_modules/
+
+# Archivos de entorno (credenciales sensibles)
+.env
+.env.local
+.env.development
+.env.production
+
+# Caché de logs y errores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuración de Vercel (si la generas localmente)
+.vercel/
+
+# Caché del editor de código
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+

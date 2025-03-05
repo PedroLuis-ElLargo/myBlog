@@ -1,190 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/9c20eab56b.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c20eab56b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo">Pedro Luis</h1>
-                <ul class="listaMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Briefcase</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
-                </ul>
-                <i class="fa-solid fa-bars"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Pedro</span>Valenzuela<br> from Dominican Republic</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <h1 class="logo">Pedro Luis</h1>
+          <ul class="listaMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Briefcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Pedro</span>Valenzuela<br />
+            from Dominican Republic
+          </h1>
         </div>
+      </div>
     </header>
     <!-- ----------ABOUT---------- -->
     <main>
-        <section id="about">
-            <div class="containerAbout">
-                <div class="row">
-                    <div class="about-col-1 columnaRow">
-                        <img src="images/background.JPG">
-                    </div>
-                    <div class="about-col-2 columnaRow">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am a proactive and self-directed person, always willing to take on new challenges and learn new skills. Additionally, I pay great attention to detail and pride myself on delivering quality products within established deadlines. I believe in the importance of collaboration and am eager to contribute creative ideas and solutions in a collaborative work environment.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>FIGMA</span><br>Designing Web/App interfaces</li>
-                                <li><span>Web Development</span><br>HTML5 - CSS5 - JavaScript - React</li>
-                                <li><span>Responsive Web Design</span><br>Adaptive designs</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2020 - Current</span><br>Graphic Designer at Turian INC.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2016 - 2018</span><br>Centro Cristiano de Educacion para el Desarrollo High School</li>
-                                <li><span>2023</span><br>Responsive Web Design, freeCodeCamp</li>
-                                <li><span>2023</span><br>Front-End web development, Alura LATAM</li>
-                                <li><span>2023</span><br>React G5 - ONE, Alura LATAM</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <section id="about">
+        <div class="containerAbout">
+          <div class="row">
+            <div class="about-col-1 columnaRow">
+              <img src="images/background.JPG" />
             </div>
-        </section>
-
-        <!-- ----------PORTFOLIO--------- -->
-        <section id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Works</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/Work/BlackJack.jpg" alt="BlackJack-App">
-                        <div class="layer">
-                            <h2>BlackJack App</h2>
-                            <p>
-                                The objective of this game is to get a score higher than that of the croupier without 
-                                exceeding 21 points, where the participating people play against the casino. It is called 
-                                Black Jack when obtaining 21 points with the first cards.
-                            </p>
-                            <a href="https://pedroluis-ellargo.github.io/Black-Jack/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Work/encriptador.jpg" alt="Encriptador-App">
-                        <div class="layer">
-                            <h2>Encriptador App</h2>
-                            <p>
-                                This app allows the user to encrypt the message that is written to him by means 
-                                of already established rules.
-                            </p>
-                            <a href="https://pedroluis-ellargo.github.io/Encriptador_de_Texto/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Work/TodoApp.jpg" alt="TodoApp">
-                        <div class="layer">
-                            <h2>Todo App</h2>
-                            <p>
-                                With the Todo-lists app, you can track assignment deadlines to make sure you 
-                                finish each task on time.
-                            </p>
-                            <a href="https://pedroluis-ellargo.github.io/Todo-App/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Work/DrawingApp.jpg" alt="DrawingApp">
-                        <div class="layer">
-                            <h2>Drawing App</h2>
-                            <p>
-                                With this application you can draw what is asked of you on the blackboard, 
-                                putting your artist skills to the test.
-                            </p>
-                            <a href="https://pedroluis-ellargo.github.io/drawing-app/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/Work/E-commerce-Turian.jpg" alt="E-commerce-Turian">
-                        <div class="layer">
-                            <h2>E-commerce Turian</h2>
-                            <p>
-                                This is a website of the company Turian INC. Created for the purpose of showing the client the view as administrator of the main page.
-                            </p>
-                            <a href="https://pedroluis-ellargo.github.io/e-commerce-Turian-Inc/" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a href="" class="btn">See more</a>
+            <div class="about-col-2 columnaRow">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I am a proactive and self-directed person, always willing to
+                take on new challenges and learn new skills. Additionally, I pay
+                great attention to detail and pride myself on delivering quality
+                products within established deadlines. I believe in the
+                importance of collaboration and am eager to contribute creative
+                ideas and solutions in a collaborative work environment.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>FIGMA</span><br />Designing Web/App interfaces</li>
+                  <li>
+                    <span>Web Development</span><br />HTML5 - CSS5 - JavaScript
+                    - React
+                  </li>
+                  <li>
+                    <span>Responsive Web Design</span><br />Adaptive designs
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2020 - 2024</span><br />Graphic Designer at Turian
+                    INC.
+                  </li>
+                  <li>
+                    <span>2024 - Current</span><br />Computer science teacher at
+                    C.C.E.D. High School.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2016 - 2018</span><br />Centro Cristiano de Educacion
+                    para el Desarrollo High School
+                  </li>
+                  <li>
+                    <span>2020 - Current</span><br />Computer Science,
+                    Universidad Autonoma de Santo Domingo
+                  </li>
+                  <li>
+                    <span>2023</span><br />Responsive Web Design, freeCodeCamp
+                  </li>
+                  <li>
+                    <span>2023</span><br />Front-End web development, Alura
+                    LATAM
+                  </li>
+                  <li>
+                    <span>2024</span><br />Developer and Database Administrator,
+                    Alura LATAM
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- ----------PORTFOLIO--------- -->
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Works</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/Work/BlackJack.jpg" alt="BlackJack-App" />
+              <div class="layer">
+                <h2>BlackJack App</h2>
+                <p>
+                  The objective of this game is to get a score higher than that
+                  of the croupier without exceeding 21 points, where the
+                  participating people play against the casino. It is called
+                  Black Jack when obtaining 21 points with the first cards.
+                </p>
+                <a
+                  href="https://pedroluis-ellargo.github.io/Black-Jack/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/Work/encriptador.jpg" alt="Encriptador-App" />
+              <div class="layer">
+                <h2>Encriptador App</h2>
+                <p>
+                  This app allows the user to encrypt the message that is
+                  written to him by means of already established rules.
+                </p>
+                <a
+                  href="https://pedroluis-ellargo.github.io/Encriptador_de_Texto/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/Work/TodoApp.jpg" alt="TodoApp" />
+              <div class="layer">
+                <h2>Todo App</h2>
+                <p>
+                  With the Todo-lists app, you can track assignment deadlines to
+                  make sure you finish each task on time.
+                </p>
+                <a
+                  href="https://pedroluis-ellargo.github.io/Todo-App/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/Work/DrawingApp.jpg" alt="DrawingApp" />
+              <div class="layer">
+                <h2>Drawing App</h2>
+                <p>
+                  With this application you can draw what is asked of you on the
+                  blackboard, putting your artist skills to the test.
+                </p>
+                <a
+                  href="https://pedroluis-ellargo.github.io/drawing-app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="images/Work/E-commerce-Turian.jpg"
+                alt="E-commerce-Turian"
+              />
+              <div class="layer">
+                <h2>E-commerce Turian</h2>
+                <p>
+                  This is a website of the company Turian INC. Created for the
+                  purpose of showing the client the view as administrator of the
+                  main page.
+                </p>
+                <a
+                  href="https://pedroluis-ellargo.github.io/e-commerce-Turian-Inc/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#portfolio" class="btn">See more</a>
+        </div>
+      </section>
     </main>
-    
 
     <!-- ----------CONTACT---------- -->
     <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> pedroluisvp99@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +1 (829) 274 4656</p>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form id="contactForm">
-                        <input type="text" id="name" placeholder="Name" required>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <textarea id="message" rows="6" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn btn3" id="btnSubmit">Submit</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> pedroluisvp99@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> +1 (849) 267 4556</p>
+            <a
+              href="images/Resume_Pedro_Luis_Valenzuela.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form id="contactForm">
+              <input type="text" id="name" placeholder="Name" required />
+              <input type="email" id="email" placeholder="Email" required />
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn3" id="btnSubmit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="copyright">
-            <p>© 2023 Pedro Luis Valenzuela (JUNIOR FRONT-ENT)  <i class="fa-brands fa-empire"></i></p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100092882898964&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://github.com/PedroLuis-ElLargo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/pedrovalenzuela112/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/pedroluisvalenzuela011620" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2023 Pedro Luis Valenzuela (JUNIOR FRONT-ENT)
+          <i class="fa-brands fa-empire"></i>
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=100092882898964&mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://github.com/PedroLuis-ElLargo" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/pedrovalenzuela112/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/pedroluisvalenzuela011620"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
+      </div>
     </footer>
-    
 
-<script src="Script/script.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-</body>
-
+    <script src="Script/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </body>
 </html>
