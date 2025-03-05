@@ -58,6 +58,7 @@ document
     try {
       let response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/send-email`,
+        // "http://localhost:3001/api/send-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -77,3 +78,9 @@ document
 
     limpiarCampos();
   });
+
+function limpiarCampos() {
+  document.querySelector("#name").value = "";
+  document.querySelector("#email").value = "";
+  document.querySelector("#message").value = "";
+}
