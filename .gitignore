@@ -15,3 +15,4 @@ yarn-error.log*
 # Configuración de Vercel (si la generas localmente)
 .vercel/
 
+.vercel

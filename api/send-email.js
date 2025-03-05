@@ -16,8 +16,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Puerto recomendado para Gmail con STARTTLS
   secure: false, // No usa SSL directamente, sino STARTTLS
   auth: {
-    user: process.env.EMAIL_USER, // Tu correo Gmail (desde .env)
-    pass: process.env.EMAIL_PASS, // Contraseña de aplicación (desde .env)
+    user: process.env.EMAIL_USER || "pedroluisvp99@gmail.com",
+    pass: process.env.EMAIL_PASS || "uocv eecv aaqi wubn",
   },
   tls: {
     rejectUnauthorized: false, // Evita problemas con certificados auto-firmados
