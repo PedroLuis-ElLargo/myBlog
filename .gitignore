@@ -15,11 +15,3 @@ yarn-error.log*
 # Configuración de Vercel (si la generas localmente)
 .vercel/
 
-# Caché del editor de código
-.vscode/
-.idea/
-
-# Archivos del sistema
-.DS_Store
-Thumbs.db
-
